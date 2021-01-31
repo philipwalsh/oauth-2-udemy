@@ -39,3 +39,22 @@ oauth for accessing apis
 OpenID Connect for identifying users
 
 ## Section 2
+
+### terminolgy
+
+user/device/app/api
+resource owner/user agent/client/resource server
+
+because the term application can mean many dirrent things to different people, its best to try not to use,
+
+for oauth spec, application is the thing in the middle trying to access an api
+
+authorization server manages access to the api it is protecting. auth server hands out the access token to the application.
+
+Application never sees user password.
+
+user redirect to the oauth server, gets a token that he brings back to the api
+
+the above are roles, not necessarily distinct components
+
+![oauth roles](images/oauth-roles.jpg)
