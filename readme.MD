@@ -40,7 +40,7 @@ OpenID Connect for identifying users
 
 ## Section 2
 
-### terminolgy
+### Terminolgy
 
 user/device/app/api
 resource owner/user agent/client/resource server
@@ -58,3 +58,22 @@ user redirect to the oauth server, gets a token that he brings back to the api
 the above are roles, not necessarily distinct components
 
 ![oauth roles](images/oauth-roles.JPG)
+
+### Application Types
+
+server side apps can have secrets in a config or environment but client side apps cannot hold your secrets.
+
+an app can have app credentials so the oauth server knows the app should be trying to authorize a user
+
+without credentials, the ouath server wouldnt know its the real application making the request
+
+knowing the apps identity and doling out an auth token are 2 distinct things
+
+### key take aways
+
+confidential apps - running on a server, can contain secrets
+public clients - cannot have secrets, so auth server may never really know if the client is the real deal. alwys choose appropriate app type when registering the client
+
+### user content
+
+consent screen is critical to the flow
