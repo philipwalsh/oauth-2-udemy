@@ -57,4 +57,4 @@ user redirect to the oauth server, gets a token that he brings back to the api
 
 the above are roles, not necessarily distinct components
 
-![oauth roles](images/oauth-roles.jpg)
+![oauth roles](images/oauth-roles.JPG)
